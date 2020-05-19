@@ -1,0 +1,23 @@
+.item {
+    &-wrapper {
+        margin: 4%;
+        .item-container {
+            display: flex;
+            justify-content: space-between;
+            text-align: left;
+            line-height: 2.3rem;
+            letter-spacing: 0.3rem;
+            font-size: calc(15px + (22 - 15) * (100vw - 400px)/(1200 - 400));
+            font-family: Arial, Helvetica, sans-serif;
+
+            .image-container {
+                width: 100%;
+            }
+        }
+
+        a {
+            color: black;
+            font-style: italic;
+        }
+    }
+}
