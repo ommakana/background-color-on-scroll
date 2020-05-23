@@ -1,17 +1,61 @@
 .item {
     &-wrapper {
-        margin: 4%;
+        margin: 12% 0%;
         .item-container {
-            display: flex;
-            justify-content: space-between;
-            text-align: left;
-            line-height: 2.3rem;
-            letter-spacing: 0.3rem;
-            font-size: calc(15px + (22 - 15) * (100vw - 400px)/(1200 - 400));
-            font-family: Arial, Helvetica, sans-serif;
-
+            margin-bottom: 5%;
             .image-container {
                 width: 100%;
+                width: 200px;
+                height: 200px;
+                    &.image-500px {
+                        background: url('../../assets/icons8-500px.svg') center no-repeat;
+                        background-size: cover;
+                        
+                    }
+                    &.image-instagram {
+                        background: url('../../assets/icons8-instagram.svg') center no-repeat;
+                        background-size: contain;
+                    }
+                    &.image-linkedin {
+                        background: url('../../assets/icons8-linkedin.svg') center no-repeat;
+                        background-size: contain;
+                    }
+                    &.image-facebook {
+                        background: url('../../assets/icons8-facebook.svg') center no-repeat;
+                        background-size: contain;
+                    }
+                   
+                .my-svg {
+                    position: relative;
+                    width: 150px;
+                    height: 150px;
+                    &::before {
+                        content: url('../../assets/KeyItemPopUp_Lock-Up-MUST-HAVE-STYLES.svg');
+                        position: absolute;
+                        width: 150px;
+                        height: 150px;
+                        animation: rotate 4s linear 1s infinite;
+                        transform: rotate(0deg);
+                    }
+                    &::after {
+                        content: url(/static/media/KeyItemPopUp_Lock-Up-PINK-LOGO.d91782fd.svg);
+                        width: 90px;
+                        // height: 100px;
+                        position: absolute;
+                        top: 58px;
+                        left: 0;
+                        right: 0;
+                        margin: auto;
+                        animation: zoom 1s alternate 1;
+                    }
+                }
+            }
+
+            .content-wrapper {
+                letter-spacing: 0.2rem;
+                font-size: calc(15px + (22 - 15) * (100vw - 400px)/(1200 - 400));
+                font-family: Arial, Helvetica, sans-serif;
+                text-align: left;
             }
         }
 
@@ -19,5 +63,23 @@
             color: black;
             font-style: italic;
         }
+    }
+}
+
+@keyframes zoom {
+    from {
+        width: 0;
+    }
+    to {
+        width: 90px;
+    }
+}
+
+@keyframes rotate {
+    from {
+        transform: rotate(0deg);
+    }
+    to {
+        transform: rotate(360deg);
     }
 }

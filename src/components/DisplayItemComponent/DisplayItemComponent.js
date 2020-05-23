@@ -2,12 +2,12 @@ import React from "react";
 import './DisplayItemComponent.scss'
 
 export const DisplayItemComponent = (props) => {
-    const { image, description, url, urlText, name } = props.data;
+    const { description, url, urlText, name } = props.data;
 
     return <div className="item-wrapper">
-        <div className="item-container">
-            <div className="image-container">
-                {/* <img src='../../assets/icons8-instagram.svg' alt={name} /> */}
+        <div className="item-container" id={name}>
+            <div className={`image-container image-${name}`}>
+                {/* <div className="my-svg"></div> */}
             </div>
             <div className="content-wrapper">{description}</div>
         </div>
