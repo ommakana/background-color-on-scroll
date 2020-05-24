@@ -38,9 +38,8 @@
                         transform: rotate(0deg);
                     }
                     &::after {
-                        content: url(/static/media/KeyItemPopUp_Lock-Up-PINK-LOGO.d91782fd.svg);
+                        content: url('../../assets/KeyItemPopUp_Lock-Up-PINK-LOGO.svg');
                         width: 90px;
-                        // height: 100px;
                         position: absolute;
                         top: 58px;
                         left: 0;
@@ -54,8 +53,9 @@
             .content-wrapper {
                 letter-spacing: 0.2rem;
                 font-size: calc(15px + (22 - 15) * (100vw - 400px)/(1200 - 400));
-                font-family: Arial, Helvetica, sans-serif;
+                font-family: cursive;
                 text-align: left;
+                color: ghostwhite;
             }
         }
 
@@ -82,4 +82,16 @@
     to {
         transform: rotate(360deg);
     }
+}
+
+.mobile {
+    .item-container {
+        .image-container {
+            margin: auto;
+        }
+        .content-wrapper {
+            text-align: center;
+        }
+    }
+   
 }
