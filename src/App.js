@@ -23,17 +23,18 @@ function App() {
       let fraction;
       // setMidPoint(midPoint);
 
-      for (let i = 0; i < data.length; i++) {
-        if ((midPoint - range) <= data[i].top && (midPoint + range) >= data[i].top) {
+      for (let i = 0; i <= data.length - 1; i++) {
+        if ( i === data.length - 1 || ((midPoint >= data[i].top - range )  && (midPoint <= data[i + 1].top - range )) ) {
           active = i;
           break;
         }
       }
 
+      setColor(data[active].color);
+
       if (midPoint <= data[active].top + range) {
         let prev = Math.max(active - 1, 0);
         fraction = (midPoint - (data[active].top - range)) / (2 * range);
-
         setColor(
           blend(
             data[prev].color,
