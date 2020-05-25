@@ -38,9 +38,9 @@ export const data = [
     {
         name: 'facebook',
         image: 'icons8-facebook.svg',
-        url: 'https://www.linkedin.com/in/om-makana-5a08b510b/',
-        description: 'Now since my IT-job is the only source of income as of now, I try to keep up with skills required to work with some intelligent people around (else I look really dumb and I say it with my experience). Only thing that I know am good at is good in learning and observing. I like to make workplace a positive environment and have fun. May be if you know of some vacancy and think I fit in you can get all my details here in my linkedin profile',
-        urlText: 'a developing developer - Om Makana',
+        url: 'https://www.facebook.com/om.makana.7/',
+        description: "Least active here. Just to update profile picture and showoff , but don't know what",
+        urlText: 'a nature lover and protector',
         color: {
             r: 173,
             g: 216,

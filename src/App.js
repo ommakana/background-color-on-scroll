@@ -17,7 +17,7 @@ function App() {
   React.useEffect(() => {
 
     const handleScroll = () => {
-      const range = 120;
+      const range = 130;
       let midPoint = Math.floor((window.scrollY + (window.innerHeight / 2)));
       let active = 0;
       let fraction;
