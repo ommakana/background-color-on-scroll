@@ -1,8 +1,16 @@
 import React from "react";
-import './DisplayItemComponent.scss'
+import './DisplayItemComponent.scss';
+import { firebaseAnalytics } from '../../utils';
 
 export const DisplayItemComponent = (props) => {
     const { description, url, urlText, name } = props.data;
+
+    const fireAnalytics = name => {
+        firebaseAnalytics.logEvent('select_content', {
+            content_type: name,
+            content_id: 'P12453'
+          });
+    }
 
     return <div className="item-wrapper">
         <div className="item-container" id={name}>
@@ -12,7 +20,7 @@ export const DisplayItemComponent = (props) => {
             <div className="content-wrapper">{description}</div>
         </div>
         <div>
-            <a href={url} target="_blank" rel="noopener noreferrer">
+            <a onClick={(name) => fireAnalytics(name)} href={url} target="_blank" rel="noopener noreferrer">
                 {urlText}
             </a>
         </div>
