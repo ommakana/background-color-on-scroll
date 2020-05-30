@@ -1,5 +1,4 @@
 import React from 'react';
-import * as firebase from 'firebase/app';
 import ReactDOM from 'react-dom';
 import App from './App';
 import * as serviceWorker from './serviceWorker';

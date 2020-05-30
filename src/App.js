@@ -8,12 +8,11 @@ function App() {
   const isMobile = window.innerWidth < 500 ? true : false;
 
   const [color, setColor] = useState({
-    r: 149,
-    g: 161,
-    b: 165
+    r: 28,
+    g: 27,
+    b: 28
   });
 
-  // const [midPoints, setMidPoint] = useState(0);
   React.useEffect(() => {
 
     const handleScroll = () => {
@@ -21,10 +20,9 @@ function App() {
       let midPoint = Math.floor((window.scrollY + (window.innerHeight / 2)));
       let active = 0;
       let fraction;
-      // setMidPoint(midPoint);
 
       for (let i = 0; i <= data.length - 1; i++) {
-        if ( i === data.length - 1 || ((midPoint >= data[i].top - range )  && (midPoint <= data[i + 1].top - range )) ) {
+        if (i === data.length - 1 || ((midPoint >= data[i].top - range) && (midPoint <= data[i + 1].top - range))) {
           active = i;
           break;
         }
@@ -57,8 +55,9 @@ function App() {
 
   return (
     <div className={isMobile ? 'mobile app' : 'app'}
-      style={{ backgroundColor: `rgb(${color.r}, ${color.g}, ${color.b})` }}>
-      {/* <div style={{border: '2px solid red', position: 'absolute', top : `${midPoints}px`}}>am at midPoint</div> */}
+      // style={{ backgroundColor: `rgb(${color.r}, ${color.g}, ${color.b})` }}
+      style={{ boxShadow: `inset -10vw 5vw 30vw 5vw rgb(${color.r}, ${color.g}, ${color.b})` }}
+    >
       {data.map((item, index) => <DisplayItemComponent key={index} data={item} />)}
     </div>
   );

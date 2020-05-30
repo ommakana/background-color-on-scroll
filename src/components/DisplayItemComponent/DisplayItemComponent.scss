@@ -52,7 +52,7 @@
 
             .content-wrapper {
                 letter-spacing: 0.2rem;
-                font-size: calc(15px + (22 - 15) * (100vw - 400px)/(1200 - 400));
+                font-size: calc(17px + (24 - 17) * (100vw - 400px)/(1200 - 400));
                 font-family: cursive;
                 text-align: left;
                 color: ghostwhite;
@@ -60,8 +60,11 @@
         }
 
         a {
-            color: black;
+            color: whitesmoke;
             font-style: italic;
+            font-family: fantasy;
+            letter-spacing: 3px;
+            font-size: calc(18px + (22 - 18) * (100vw - 400px)/(1200 - 400));
         }
     }
 }

@@ -6,9 +6,9 @@ export const data = [
         description: '500px is a platform for professional photographers to show case the camera "keeda" within them. Which is nothing new when it comes to such platforms. But ! In here you can also earn $$, by submitting the photos and if it gets licensed, it can be bought by buyers from distribution partners.! Nice right.. I also have one of my photo selected.',
         urlText: 'Photos by me',
         color: {
-            r: 149,
-            g: 161,
-            b: 165
+            r: 28,
+            g: 27,
+            b: 28
         }
     },
     {
@@ -42,9 +42,9 @@ export const data = [
         description: "Least active here. Just to update profile picture and showoff , but don't know what",
         urlText: 'a nature lover and protector',
         color: {
-            r: 173,
-            g: 216,
-            b: 230
+            r: 54,
+            g: 82,
+            b: 30
         }
     },
 ];
