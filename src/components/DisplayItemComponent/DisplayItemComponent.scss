@@ -25,29 +25,29 @@
                         background-size: contain;
                     }
                    
-                .my-svg {
-                    position: relative;
-                    width: 150px;
-                    height: 150px;
-                    &::before {
-                        content: url('../../assets/KeyItemPopUp_Lock-Up-MUST-HAVE-STYLES.svg');
-                        position: absolute;
-                        width: 150px;
-                        height: 150px;
-                        animation: rotate 4s linear 1s infinite;
-                        transform: rotate(0deg);
-                    }
-                    &::after {
-                        content: url('../../assets/KeyItemPopUp_Lock-Up-PINK-LOGO.svg');
-                        width: 90px;
-                        position: absolute;
-                        top: 58px;
-                        left: 0;
-                        right: 0;
-                        margin: auto;
-                        animation: zoom 1s alternate 1;
-                    }
-                }
+                // .my-svg {
+                //     position: relative;
+                //     width: 150px;
+                //     height: 150px;
+                //     &::before {
+                //         content: url('../../assets/KeyItemPopUp_Lock-Up-MUST-HAVE-STYLES.svg');
+                //         position: absolute;
+                //         width: 150px;
+                //         height: 150px;
+                //         animation: rotate 4s linear 1s infinite;
+                //         transform: rotate(0deg);
+                //     }
+                //     &::after {
+                //         content: url('../../assets/KeyItemPopUp_Lock-Up-PINK-LOGO.svg');
+                //         width: 90px;
+                //         position: absolute;
+                //         top: 58px;
+                //         left: 0;
+                //         right: 0;
+                //         margin: auto;
+                //         animation: zoom 1s alternate 1;
+                //     }
+                // }
             }
 
             .content-wrapper {
